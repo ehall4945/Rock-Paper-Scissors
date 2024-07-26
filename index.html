@@ -9,32 +9,40 @@
 </head>
 <body>
     <div class="scores">
-        <h1>Rock Paper Scissors</h1>
-        <h2>First Person to Five Wins!</h2>
-        <div class="player-score">
-            <h2>Player Score:</h2>
-            <h2 class="player-current-score"></h2>
+        <div class="heading">
+            <div class="title">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+            <div class="rules">
+                <h2>First Person to Five Wins!</h2>
+            </div>
         </div>
-        <div class="opponent-score">
-            <h2>Opponent Score:</h2>
-            <h2 class="opponent-current-score"></h2>
+        <div class="score-counts">
+            <div class="player-score">
+                <h2>Player Score: </h2>
+                <h2 class="player-current-score"> 0</h2>
+            </div>
+            <div class="opponent-score">
+                <h2>Computer Score: </h2>
+                <h2 class="opponent-current-score"> 0</h2>
+            </div>
         </div>
     </div>
     <div class="selection-area">
         <h2>Choose Your Weapon!</h2>
         <div class="selection-images">
             <div class="rock">
-
+                <img src="./rock.jpeg">
             </div>
             <div class="paper">
-    
+                <img src="./paper.jpeg">
             </div>
             <div class="scissors">
-
+                <img src="./scissors.jpeg">
             </div>
         </div>
         <div class="play-again">
-            <h2>Play Again?</h2>
+            <button id="play-again">Play Again?</button>
         </div>
     </div>
 </body>

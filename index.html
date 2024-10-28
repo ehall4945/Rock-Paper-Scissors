@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="scores">
@@ -20,11 +19,14 @@
         <div class="score-counts">
             <div class="player-score">
                 <h2>Player Score: </h2>
-                <h2 class="player-current-score"> 0</h2>
+                <h2 id="player-current-score"> 0</h2>
             </div>
-            <div class="opponent-score">
+            <div class="result">
+                <h2>Paper beats rock, you win!</h2>
+            </div>
+            <div class="computer-score">
                 <h2>Computer Score: </h2>
-                <h2 class="opponent-current-score"> 0</h2>
+                <h2 id="computer-current-score"> 0</h2>
             </div>
         </div>
     </div>
@@ -32,18 +34,20 @@
         <h2>Choose Your Weapon!</h2>
         <div class="selection-images">
             <div class="rock">
-                <img src="./rock.jpeg">
+                <img id="rock" src="./rock.jpeg">
             </div>
             <div class="paper">
-                <img src="./paper.jpeg">
+                <img id="paper" src="./paper.jpeg">
             </div>
             <div class="scissors">
-                <img src="./scissors.jpeg">
+                <img id = "scissors" src="./scissors.jpeg">
             </div>
         </div>
         <div class="play-again">
             <button id="play-again">Play Again?</button>
         </div>
     </div>
+    <!-- Put script link at the end of body tag so JavaScript code can run properly -->
+    <script src="script.js"></script>
 </body>
 </html>
